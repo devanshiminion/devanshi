@@ -1,0 +1,76 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "2dfd9412-bb12-4564-90b7-fc470cf7550e": {
+        "id": "2dfd9412-bb12-4564-90b7-fc470cf7550e",
+        "parent": null,
+        "name": "devanshi.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "devanshi.py",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python2.7",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "8ee066c8-27b5-46ba-a5e3-5af82806fe82": {
+            "id": "8ee066c8-27b5-46ba-a5e3-5af82806fe82",
+            "name": "test",
+            "functionId": "2dfd9412-bb12-4564-90b7-fc470cf7550e",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "2dfd9412-bb12-4564-90b7-fc470cf7550e"
+    ],
+    "currentFileId": "2dfd9412-bb12-4564-90b7-fc470cf7550e",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "devanshi",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1584958406403
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "devanshi",
+      "url": "https://github.com/devanshiminion/devanshi"
+    }
+  }
+}
