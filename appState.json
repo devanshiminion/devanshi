@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "devanshi.py",
         "cursor": {
-          "lineNumber": 1,
-          "column": 1
+          "lineNumber": 5,
+          "column": 18
         },
         "config": {
           "runtime": "python2.7",
@@ -53,7 +53,14 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "ask_sdk_core": {
+          "name": "ask_sdk_core",
+          "version": "1.13.0",
+          "dev": false,
+          "language": "python"
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -64,7 +71,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1584958406403
+    "lastSave": 1584959500914
   },
   "VCS_STATE": {
     "provider": "GitHub",
