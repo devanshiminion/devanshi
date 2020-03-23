@@ -1,1 +1,2 @@
 ask_sdk_core == 1.13.0
+ask_sdk_model == 1.22.0
