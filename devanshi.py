@@ -33,8 +33,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
             False)
         return handler_input.response_builder.response
 
-
-class bananacrazyIntentIntentHandler(AbstractRequestHandler):
+class bananacrazyIntentHandler(AbstractRequestHandler):
     """Handler for banana crazy Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
@@ -80,7 +79,9 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
         handler_input.response_builder.speak(speech_text).set_card(
             SimpleCard("banana crazy", speech_text))
         return handler_input.response_builder.response
-
+ 
+        handler_input.response_builder.speak(speech_text).ask(reprompt)
+        return handler_input.response_builder.response
 
 class FallbackIntentHandler(AbstractRequestHandler):
     """
@@ -97,11 +98,6 @@ class FallbackIntentHandler(AbstractRequestHandler):
             "The banana crazy skill can't help you with that.  " +
             "You can ask how much a banana split is.")
         reprompt = "You can say $2!!"
-        handler_input.response_builder.speak(speech_text).ask(reprompt)
-        return handler_input.response_builder.response
-
-
-class SessionEndedRequestHandler(AbstractRequestHandler):
     """Handler for Session End."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
@@ -131,7 +127,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(HelloWorldIntentHandler())
+sb.add_request_handler(bananacrazyIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
