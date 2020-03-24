@@ -27,7 +27,7 @@
             "id": "8ee066c8-27b5-46ba-a5e3-5af82806fe82",
             "name": "test",
             "functionId": "2dfd9412-bb12-4564-90b7-fc470cf7550e",
-            "event": "{\n\t\"version\": \"1.0\",\n\t\"session\": {\n\t\t\"new\": true,\n\t\t\"sessionId\": \"amzn1.echo-api.session.bfa726b8-5176-4ca3-af1c-445e3b89913f\",\n\t\t\"application\": {\n\t\t\t\"applicationId\": \"amzn1.ask.skill.ad4f01d8-4396-4826-8df0-4226f7a2aadf\"\n\t\t},\n\t\t\"user\": {\n\t\t\t\"userId\": \"amzn1.ask.account.AHLQ3YN2JCQTVYD3ISWJNJCQSTKWIW2EFDRLZ3WJYGZVHZWSMYPJYU3ADAU5N3LVWN3HJX4J5EOD3P4XSF4ZG3WDPXX7DNWDDG22ILTJTCIJTOJXQ6YXWTOOP4Y2ZQHLXNSUDFFBG3NX5ZHP6QSXPWV4JFWQTDIOQ7RRU224NAFOASGSLK4AZX5IHGRO6H7RQF4QSF2YBOK364I\"\n\t\t}\n\t},\n\t\"context\": {\n\t\t\"System\": {\n\t\t\t\"application\": {\n\t\t\t\t\"applicationId\": \"amzn1.ask.skill.ad4f01d8-4396-4826-8df0-4226f7a2aadf\"\n\t\t\t},\n\t\t\t\"user\": {\n\t\t\t\t\"userId\": \"amzn1.ask.account.AHLQ3YN2JCQTVYD3ISWJNJCQSTKWIW2EFDRLZ3WJYGZVHZWSMYPJYU3ADAU5N3LVWN3HJX4J5EOD3P4XSF4ZG3WDPXX7DNWDDG22ILTJTCIJTOJXQ6YXWTOOP4Y2ZQHLXNSUDFFBG3NX5ZHP6QSXPWV4JFWQTDIOQ7RRU224NAFOASGSLK4AZX5IHGRO6H7RQF4QSF2YBOK364I\"\n\t\t\t},\n\t\t\t\"device\": {\n\t\t\t\t\"deviceId\": \"amzn1.ask.device.AFKBR4BKUV23VP5HTLO26R7OLUJGNHZACDDFYOH2CVX7MX2XABIIYITBVIK6EXCSPKWIL2V2Z5JO37NW6YTGEK4TDBRE6EEKZTPMWP4BSYL5H7T7XY7HIXASPCLPKKEW3AKYMVXI6PBNCRWT6QXSWUVGX5L4EH6YQY2G7VBQO3OOUP6S7T4U6\",\n\t\t\t\t\"supportedInterfaces\": {}\n\t\t\t},\n\t\t\t\"apiEndpoint\": \"https://api.amazonalexa.com\",\n\t\t\t\"apiAccessToken\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmFkNGYwMWQ4LTQzOTYtNDgyNi04ZGYwLTQyMjZmN2EyYWFkZiIsImV4cCI6MTU4NTA0MDYzNywiaWF0IjoxNTg1MDQwMzM3LCJuYmYiOjE1ODUwNDAzMzcsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBNHBiN3YvaUVPcTQyZnBMeE0zRiszS3dFQUFBQUFBQUJLekN1ZWs4c2JkT2xkdFFac1lURFJpdlJnZU01UHVwQmhXYmZHVkY1Q1gycEhCSG1TRjh0Y0YxMXp3dnJHbkZoallKUXcrc2dRenArTzV0UXFudUgreEdHekRmaEErNXk2ZmkrdHdpaEdzMjNkYzVFSTJtSXNuY0p4SnlNYXM4bHFvMlU0c0pIMVBlMTRIVFIxbUxja2xVMW1vWnVZb1ltZzJ3c0t4NFRXYUoyT0poQXFiUVVybWtIbDJaSnZCUHpsSklROG5PWTNGdjBNZnVnWGxubU9KUy9qUVFlaXl2TVdDZ0l5dCtvdzZPYWJIYzNpWFRmUDRIY2dUWVMyZkVOREpKaGFtM2IwdVBuN2t3RFdSM0RjbWI4VEN2c2VuL0FiSER5dzY1ZW4yalprZmFqb2RkNkxhSkNZWFkycnJtQmpvYlJJWlBGVkdJRmVoc1hSMlVsZEx3cEhrUENScW4weC8yMFo4NEE5TE1MTXhMN2hHU0R5bzJQMHdPK0ZBMXFGZnpRUTg5MXRvbUU4a3c9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFGS0JSNEJLVVYyM1ZQNUhUTE8yNlI3T0xVSkdOSFpBQ0RERllPSDJDVlg3TVgyWEFCSUlZSVRCVklLNkVYQ1NQS1dJTDJWMlo1Sk8zN05XNllUR0VLNFREQlJFNkVFS1pUUE1XUDRCU1lMNUg3VDdYWTdISVhBU1BDTFBLS0VXM0FLWU1WWEk2UEJOQ1JXVDZRWFNXVVZHWDVMNEVINllRWTJHN1ZCUU8zT09VUDZTN1Q0VTYiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BSExRM1lOMkpDUVRWWUQzSVNXSk5KQ1FTVEtXSVcyRUZEUkxaM1dKWUdaVkhaV1NNWVBKWVUzQURBVTVOM0xWV04zSEpYNEo1RU9EM1A0WFNGNFpHM1dEUFhYN0ROV0RERzIySUxUSlRDSUpUT0pYUTZZWFdUT09QNFkyWlFITFhOU1VERkZCRzNOWDVaSFA2UVNYUFdWNEpGV1FURElPUTdSUlUyMjROQUZPQVNHU0xLNEFaWDVJSEdSTzZIN1JRRjRRU0YyWUJPSzM2NEkifX0.TBTkWjkW1ic_3iBYOwF_wYKQ_4REg2cCXGb1onGUc6I7094klcs3kXa0vi526PJpT-XTFGSleGRH1AUf1ik3P0zHGT1wxg5hKKVXs8GQxPnEr_i5rKkWpkJCz28qfdPIgOBpfUzMI9jep1zhLWM0_JzJWPS0ywEIpxQ1PU1ClPkceUhw1PUdIMprjPW4-xlMOtkb_fwa0-5foA4vaKs65zHiAVSGS3IOm9Rn5jWgvckrKy27eNja1Pup6-R9QAFY_6g8KM3-QNEUq3x0Vu50DmEzu3xOPkCRMdkUfhNez9I_XkxdWt2lCc_U7YF8oh4KN8bcgzlJuIMfcHGWcXsbFg\"\n\t\t},\n\t\t\"Viewport\": {\n\t\t\t\"experiences\": [\n\t\t\t\t{\n\t\t\t\t\t\"arcMinuteWidth\": 246,\n\t\t\t\t\t\"arcMinuteHeight\": 144,\n\t\t\t\t\t\"canRotate\": false,\n\t\t\t\t\t\"canResize\": false\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"shape\": \"RECTANGLE\",\n\t\t\t\"pixelWidth\": 1024,\n\t\t\t\"pixelHeight\": 600,\n\t\t\t\"dpi\": 160,\n\t\t\t\"currentPixelWidth\": 1024,\n\t\t\t\"currentPixelHeight\": 600,\n\t\t\t\"touch\": [\n\t\t\t\t\"SINGLE\"\n\t\t\t],\n\t\t\t\"video\": {\n\t\t\t\t\"codecs\": [\n\t\t\t\t\t\"H_264_42\",\n\t\t\t\t\t\"H_264_41\"\n\t\t\t\t]\n\t\t\t}\n\t\t},\n\t\t\"Viewports\": [\n\t\t\t{\n\t\t\t\t\"type\": \"APL\",\n\t\t\t\t\"id\": \"main\",\n\t\t\t\t\"shape\": \"RECTANGLE\",\n\t\t\t\t\"dpi\": 160,\n\t\t\t\t\"presentationType\": \"STANDARD\",\n\t\t\t\t\"canRotate\": false,\n\t\t\t\t\"configuration\": {\n\t\t\t\t\t\"current\": {\n\t\t\t\t\t\t\"video\": {\n\t\t\t\t\t\t\t\"codecs\": [\n\t\t\t\t\t\t\t\t\"H_264_42\",\n\t\t\t\t\t\t\t\t\"H_264_41\"\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"size\": {\n\t\t\t\t\t\t\t\"type\": \"DISCRETE\",\n\t\t\t\t\t\t\t\"pixelWidth\": 1024,\n\t\t\t\t\t\t\t\"pixelHeight\": 600\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t},\n\t\"request\": {\n\t\t\"type\": \"LaunchRequest\",\n\t\t\"requestId\": \"amzn1.echo-api.request.0228cacd-c57c-4ee8-a596-1d96de3a6bdb\",\n\t\t\"timestamp\": \"2020-03-24T08:58:57Z\",\n\t\t\"locale\": \"en-US\",\n\t\t\"shouldLinkResultBeReturned\": false\n\t}\n}",
+            "event": "{\n    \"interactionModel\": {\n        \"languageModel\": {\n            \"invocationName\": \"under the sea\",\n            \"intents\": [\n                {\n                    \"name\": \"AMAZON.FallbackIntent\",\n                    \"samples\": []\n                },\n                {\n                    \"name\": \"AMAZON.CancelIntent\",\n                    \"samples\": []\n                },\n                {\n                    \"name\": \"AMAZON.HelpIntent\",\n                    \"samples\": []\n                },\n                {\n                    \"name\": \"AMAZON.StopIntent\",\n                    \"samples\": []\n                },\n                {\n                    \"name\": \"AMAZON.NavigateHomeIntent\",\n                    \"samples\": []\n                },\n                {\n                    \"name\": \"undertheseaIntent\",\n                    \"slots\": [\n                        {\n                            \"name\": \"seaanimal\",\n                            \"type\": \"SEAANIMALS\"\n                        }\n                    ],\n                    \"samples\": [\n                        \"what can the {seaanimal} do\",\n                        \"what is the {seaanimal} like\",\n                        \"who is the {seaanimal}\"\n                    ]\n                }\n            ],\n            \"types\": [\n                {\n                    \"name\": \"SEAANIMALS\",\n                    \"values\": [\n                        {\n                            \"name\": {\n                                \"value\": \"sea horse\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"lobster\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"oyster\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"clam\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"starfish\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"octopus\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"squid\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"crab\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"sea porcupine\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"sea cucumber\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"megalodon\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"shark\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"killer whale\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"whale\"\n                            }\n                        },\n                        {\n                            \"name\": {\n                                \"value\": \"dolphin\"\n                            }\n                        }\n                    ]\n                }\n            ]\n        }\n    }\n}",
             "eventTemplate": "hello-world"
           }
         }
@@ -42,11 +42,33 @@
         "isRemovable": true,
         "filePath": "family.py",
         "cursor": {
-          "lineNumber": 134,
-          "column": 32
+          "lineNumber": 3,
+          "column": 30
         },
         "config": {
           "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "56a78fe9-bfc5-4547-a5d3-75ac3fbbfc13": {
+        "id": "56a78fe9-bfc5-4547-a5d3-75ac3fbbfc13",
+        "parent": null,
+        "name": "underthesea.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "underthesea.py",
+        "cursor": {
+          "lineNumber": 135,
+          "column": 155
+        },
+        "config": {
+          "runtime": "python2.7",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -57,9 +79,9 @@
     },
     "openFiles": [
       "2dfd9412-bb12-4564-90b7-fc470cf7550e",
-      "175d41f7-1d74-40b6-9a42-91b625e30f58"
+      "56a78fe9-bfc5-4547-a5d3-75ac3fbbfc13"
     ],
-    "currentFileId": "175d41f7-1d74-40b6-9a42-91b625e30f58",
+    "currentFileId": "56a78fe9-bfc5-4547-a5d3-75ac3fbbfc13",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -100,7 +122,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1585045277283
+    "lastSave": 1585050936518
   },
   "VCS_STATE": {
     "provider": "GitHub",

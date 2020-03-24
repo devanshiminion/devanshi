@@ -26,25 +26,25 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Welcome to my family. We are all crazy in here. You can ask me who they are."
+        speech_text = "Welcome to under the sea! The sea is full of wonderful creatures living in peace and harmony.you can ask me about the differant kinds of sea animals."
 
         handler_input.response_builder.speak(speech_text).set_card(
-            SimpleCard("my family", speech_text)).set_should_end_session(
+            SimpleCard("under the sea", speech_text)).set_should_end_session(
             False)
         return handler_input.response_builder.response
 
 class bananacrazyIntentHandler(AbstractRequestHandler):
-    """Handler for my family Intent."""
+    """Handler for under the sea Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return is_intent_name("my family Intent")(handler_input)
+        return is_intent_name("under the sea Intent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "who can i tell you about"
+        speech_text = ""
 
         handler_input.response_builder.speak(speech_text).set_card(
-            SimpleCard("my family", speech_text)).set_should_end_session(
+            SimpleCard("", speech_text)).set_should_end_session(
             True)
         return handler_input.response_builder.response
 
@@ -69,11 +69,11 @@ class HelpIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Who can i tell you about"
+        speech_text = "you can ask me about any sea animal you like."
 
         handler_input.response_builder.speak(speech_text).ask(
             speech_text).set_card(SimpleCard(
-                "my family", speech_text))
+                "", speech_text))
         return handler_input.response_builder.response
 
 
@@ -89,7 +89,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
         speech_text = "Goodbye!"
 
         handler_input.response_builder.speak(speech_text).set_card(
-            SimpleCard("my family", speech_text))
+            SimpleCard("under the sea", speech_text))
         return handler_input.response_builder.response
  
         handler_input.response_builder.speak(speech_text).ask(reprompt)
@@ -107,8 +107,9 @@ class FallbackIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speech_text = (
-            "You can ask how we all are.")
-        reprompt = "You can say how crazy we are"
+            "The under the sea skill can't help you with that.  " +
+            "You can ask me about the types of sea animals under the sea. Maybe a killer whale?")
+        reprompt = "You can say killer whale!!"
     """Handler for Session End."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
@@ -131,14 +132,14 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speech = "We are crazy"
+        speech = "The killer whale is a large fish who is not a whale, of which the largest was 32 feet long.they live in groups call pods and eat sharks."
         handler_input.response_builder.speak(speech).ask(speech)
 
         return handler_input.response_builder.response
 
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(myfamilyIntentHandler())
+sb.add_request_handler(bananacrazyIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
@@ -147,3 +148,4 @@ sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_exception_handler(CatchAllExceptionHandler())
 
 handler = sb.lambda_handler()
+
