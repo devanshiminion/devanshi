@@ -26,7 +26,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Welcome to banana crazy! you can ask me the closing time or the prices. Which one will it be?"
+        speech_text = "Welcome to banana crazy! you can ask me the closing time or the prices. By the way, all items are only $1 today. Which one will it be?"
 
         handler_input.response_builder.speak(speech_text).set_card(
             SimpleCard("banana crazy", speech_text)).set_should_end_session(
@@ -37,7 +37,7 @@ class bananacrazyIntentHandler(AbstractRequestHandler):
     """Handler for banana crazy Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return is_intent_name("bananacrazyIntent")(handler_input)
+        return is_intent_name("banana crazy Intent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
@@ -108,8 +108,8 @@ class FallbackIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speech_text = (
             "The banana crazy skill can't help you with that.  " +
-            "You can ask how much a banana split is.")
-        reprompt = "You can say $2!!"
+            "You can ask how much a {BANANAS} is.")
+        reprompt = "You can say $3!!"
     """Handler for Session End."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
@@ -132,7 +132,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speech = "a banana split is $3"
+        speech = "it is $3"
         handler_input.response_builder.speak(speech).ask(speech)
 
         return handler_input.response_builder.response
