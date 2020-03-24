@@ -26,7 +26,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Welcome to banana crazy! you can ask me the closing time or the prices. Which one will it be?"
+        speech_text = "Welcome to banana crazy! It is crazy to serve you again. You can ask me the closing time or the prices. Which one will it be?"
 
         handler_input.response_builder.speak(speech_text).set_card(
             SimpleCard("banana crazy", speech_text)).set_should_end_session(
