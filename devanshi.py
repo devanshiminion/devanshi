@@ -48,6 +48,18 @@ class bananacrazyIntentHandler(AbstractRequestHandler):
             True)
         return handler_input.response_builder.response
 
+class SessionEndedRequestHandler(AbstractRequestHandler):
+    """Handler for Session End."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_request_type("SessionEndedRequest")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+
+        # Any cleanup logic goes here.
+
+        return handler_input.response_builder.response
 
 class HelpIntentHandler(AbstractRequestHandler):
     """Handler for Help Intent."""
@@ -120,7 +132,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speech = "Sorry, there was some problem. Please try again!!"
+        speech = "a banana split is $3"
         handler_input.response_builder.speak(speech).ask(speech)
 
         return handler_input.response_builder.response
