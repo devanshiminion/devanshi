@@ -139,7 +139,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(bananacrazyIntentHandler())
+sb.add_request_handler(undertheseaIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
