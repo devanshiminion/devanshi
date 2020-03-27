@@ -26,27 +26,14 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Welcome to under the sea! The sea is full of wonderful creatures living in peace and harmony.you can ask me about the differant kinds of sea animals."
+        speech_text = "Welcome to under the sea! The sea is full of wonderful creatures living in peace and harmony. You can ask me about the differant kinds of sea animals."
 
         handler_input.response_builder.speak(speech_text).set_card(
             SimpleCard("under the sea", speech_text)).set_should_end_session(
             False)
         return handler_input.response_builder.response
 
-class bananacrazyIntentHandler(AbstractRequestHandler):
-    """Handler for under the sea Intent."""
-    def can_handle(self, handler_input):
-        # type: (HandlerInput) -> bool
-        return is_intent_name("under the sea Intent")(handler_input)
 
-    def handle(self, handler_input):
-        # type: (HandlerInput) -> Response
-        speech_text = ""
-
-        handler_input.response_builder.speak(speech_text).set_card(
-            SimpleCard("", speech_text)).set_should_end_session(
-            True)
-        return handler_input.response_builder.response
 
 class SessionEndedRequestHandler(AbstractRequestHandler):
     """Handler for Session End."""
@@ -59,6 +46,21 @@ class SessionEndedRequestHandler(AbstractRequestHandler):
 
         # Any cleanup logic goes here.
 
+        return handler_input.response_builder.response
+
+class undertheseaIntentHandler(AbstractRequestHandler):
+    """Handler for under the sea Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("under the sea Intent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speech_text = ""
+
+        handler_input.response_builder.speak(speech_text).set_card(
+            SimpleCard("under the sea", speech_text)).set_should_end_session(
+            True)
         return handler_input.response_builder.response
 
 class HelpIntentHandler(AbstractRequestHandler):
@@ -132,7 +134,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speech = "The killer whale is a large fish who is not a whale, of which the largest was 32 feet long.they live in groups call pods and eat sharks."
+        speech = "The killer whale is a large fish who is not a whale, of which the largest was 32 feet long. They live in groups call pods and eat sharks."
         handler_input.response_builder.speak(speech).ask(speech)
 
         return handler_input.response_builder.response
